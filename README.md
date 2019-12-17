@@ -8,20 +8,22 @@ Il s'agit foncièrement d'une IA capable à partir d'un fichier IFC d'en interpr
 
 ## Dépendances
 
-- Un environnement prolog (SWIProlog de préférence) (https://www.swi-prolog.org/)
-- Python3
+- Un environnement prolog (https://www.swi-prolog.org/)
+- Python3 (https://www.python.org/download/releases/3.0/)
 - La librairie Python PySwip (https://pypi.org/project/pyswip/)
 
 ## Quick start
 
-Dans un fichier ou dans l'interpréteur python directement :
+### Pour tester la partie raisonnement : 
+
+Dans un fichier ou dans l'interpréteur python directement insérer comme suit 
 
 ```python
 import spaceOrRoom
 print(Space()) 
 ```
 
-Donne, en l'occurrence : 
+Qui devrait donner en l'occurrence : 
 ```
 Le lieu est un espace
 ```
