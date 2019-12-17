@@ -38,3 +38,6 @@ def Room():
        out += "le lieu est une piece"
 
     return out
+
+
+print(Space())
