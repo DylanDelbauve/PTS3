@@ -4,7 +4,7 @@
 
 Il s'agit foncièrement d'une IA capable à partir d'un fichier IFC d'en interpréter les informations pour réaliser un raisonnement logique en fonction d'un ensemble de règles définies.
 
-À terme, *via* un système de chat bot, L'IA devrait être capable de converser en posant des questions à l'utilisateur pour au final proposer une solution d'agencement de l'espace et ce dans le respect de normes diverses, de l'ontologie et de la topologie sémantique inhérent bâtiment.
+À terme, *via* un système de chat bot, L'IA devrait être capable de converser en posant des questions à l'utilisateur pour au final proposer une solution d'agencement de l'espace et ce dans le respect de normes diverses, de l'ontologie et de la topologie sémantique inhérent à un bâtiment.
 
 ## Dépendances
 
