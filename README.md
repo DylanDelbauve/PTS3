@@ -2,8 +2,9 @@
 
 ## Introduction
 
-Ce projet permet dans une démarche ontologique, à partir de fichiers IFC, d'avoir un raisonnement de topologie sémantique. Le programme devrait à terme être capable à partir d'un fichier IFC
-d'interpréter les informations du ficher de norme IFC pour en tirer un raisonnement.
+Il s'agit foncièrement d'une IA capable à partir d'un fichier IFC d'en interpréter les informations pour réaliser un raisonnement logique en fonction d'un ensemble de règles définies.
+
+À terme, *via* un système de chat bot, L'IA devrait être capable de converser en posant des questions à l'utilisateur pour au final proposer une solution d'agencement de l'espace et ce dans le respect de normes diverses, de l'ontologie et de la topologie sémantique d'un bâtiment.
 
 ## Dépendances
 
@@ -28,10 +29,13 @@ Le lieu est un espace
 
 Il s'agit avant tout d'un projet scolaire de découverte, il n'est pas terminé, il dispose à l'heure actuelle :
 
-- D'une base de connaissances de différents espaces et pièces ;
+- D'une base de connaissances ;
 - D'une interface graphique permettant de recueillir des informations dans un fichier IFC ; 
 - de quelques fonctions de démonstrations de raisonnement possible.
 
+### Base de connaissances
+
+Il s'agit d'un ensemble de faits sur des pièces et espaces avec leurs attributs propres. Cette base de connaissances n'a pas été créer dans une démarche de respect des normes etc. Mais plutôt dans le cadre d'une réflexion ouverte de ce qui constitue pour nous, à notre niveau et avec notre subjectivité propre, une pièce en elle-même ou par rapport à une autre. Il en va de même pour la définition même de pièce et espace.
 
 ### Raisonnement 
 
