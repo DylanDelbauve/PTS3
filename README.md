@@ -44,6 +44,6 @@ Il s'agit d'un ensemble de faits sur des pièces et espaces avec leurs attributs
 La partie raisonnement fonctionne pour l'instant de la manière suivante :
 
 - un fichier python (**facts py**) contient un ensemble de fait sur une pièce ;
-- le fichier **SpaceOrRoom lui contient un ensemble de règles Prolog ; 
+- le fichier **SpaceOrRoom.py** lui contient un ensemble de règles Prolog ; 
 - enfin les fonctions appelées, appliquent les règles aux faits et retournent à l'utilisateur le résultat.
 
