@@ -28,13 +28,13 @@ Pour être une pièce le lieu doit :
 ```python
 Space()
 ```
-##### Utilisation :
+##### Utilisation
 
 ```python
 print(Space())
 ```
 
-##### Description :
+##### Description
 
 Détermine si un lieu est un espace ou non en fonction des différentes règles établies.
 Il retourne ensuite une chaîne de caractère en fonction du contexte disant si ou oui ou
@@ -45,13 +45,13 @@ non il s'agit d'un espace.
 ```python
 Room()
 ```
-##### Utilisation :
+##### Utilisation
 
 ```python
 print(Room())
 
 ```
-#### Description :
+#### Description
 
 Détermine si un lieu est une pièce ou non en fonction des différentes règles établies.
 Il retourne ensuite une chaîne de caractère en fonction du contexte disant si ou oui ou
