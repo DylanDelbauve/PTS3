@@ -27,6 +27,8 @@ Qui devrait donner en l'occurrence :
 ```
 Le lieu est un espace
 ```
+
+Pour aller plus loin, se référer à la documentation technique.
 ## Notes
 
 Il s'agit avant tout d'un projet scolaire de découverte, il n'est pas terminé, il dispose à l'heure actuelle :
