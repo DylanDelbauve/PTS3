@@ -14,7 +14,8 @@ Pour être un espace le lieu doit :
 - être desservi par un accès à l'électricité
 
 Pour être une pièce le lieu doit :
-- être un espace- avoir un accès au chauffage
+- être un espace
+- avoir un accès au chauffage
 - avoir une superficie supérieure à 9 m²
 
 
