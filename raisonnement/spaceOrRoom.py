@@ -14,30 +14,23 @@ def Space():
     """
        determines if the place is a space according to established rules and based on the facts
         Returns:
-            string: A string saying whether the place is a space or not.
+            bool: Saying whether the place is a space or not.
     """
-    out = ""
+    out = False
     queryEsp= list(prolog.query("espace()"))
-    if not len(queryEsp):
-       out += "Le lieu n'est pas un espace"
-    else:
-       out += "Le lieu est un espace"
+    if len(queryEsp):
+       out = True
     return out
 
 def Room():
     """
        determines if the place is a room according to established rules and based on the facts
         Returns:
-            string: A string saying whether the place is a room or not.
+            bool: Saying whether the place is a room or not.
     """
-    out = ""
+    out = False
     queryRoom = list(prolog.query("piece()"))
-    if not len(queryRoom):
-       out += "le lieu n'est pas une piece"
-    else:   
-       out += "le lieu est une piece"
+    if len(queryRoom):
+       out = True
 
     return out
-
-
-print(Space())
