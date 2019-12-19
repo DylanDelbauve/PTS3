@@ -47,6 +47,30 @@ Room()
 print(Room())
 
 ```
-#### Description
+##### Description
 
 Détermine si un lieu est une pièce ou non en fonction des différentes règles établies. Il retourne ensuite une chaîne de caractères en fonction du contexte disant si ou oui ou non il s'agit d'une pièce.
+
+#### writeFacts
+
+```python
+writeFacts(tab)
+```
+
+##### Utilisation
+
+```python
+tab = (
+    "mur(4)",
+    "ouverture(porte)",
+    "desservi(electricite)",
+    "desservi(chauffage)",
+    "desservi(gaz)",
+    "superficie(9)"
+)
+
+writeFacts(tab)
+```
+##### Description
+
+Permets d'écrire les assertions correspondant à un lieu dans un fichier python (facts py) prévu pour.
