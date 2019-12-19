@@ -12,4 +12,4 @@ tab = (
 
 test.writeFacts(tab)
 
-print(test.spaceOrRoom.Room())
+print(test.Room())
