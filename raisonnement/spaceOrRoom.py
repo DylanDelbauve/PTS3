@@ -1,5 +1,4 @@
 from pyswip import Prolog
-import facts
 prolog = Prolog
 
 
