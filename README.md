@@ -25,7 +25,7 @@ print(Space())
 
 Qui devrait donner en l'occurrence : 
 ```
-Le lieu est un espace
+True
 ```
 
 Pour aller plus loin, se référer à la documentation technique.
