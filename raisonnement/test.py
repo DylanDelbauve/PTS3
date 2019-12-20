@@ -1,5 +1,5 @@
 import placeTest
-test = placeTest
+place = placeTest
 
 tab = (
     "mur(4)",
@@ -10,6 +10,6 @@ tab = (
     "superficie(9)"
 )
 
-test.writeFacts(tab)
+place.writeFacts(tab)
 
-print(test.Room())
+print(place.iskitchen())
