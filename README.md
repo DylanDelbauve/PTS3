@@ -19,7 +19,7 @@ Il s'agit foncièrement d'une IA capable à partir d'un fichier IFC d'en interpr
 Dans un fichier ou dans l'interpréteur python directement insérer comme suit 
 
 ```python
-import spaceOrRoom
+import placeTest
 print(Space()) 
 ```
 
