@@ -101,12 +101,12 @@ tab = (
 
 place.writeFacts(tab)
 
-print(place.iskitchen()) # OR print(place.isOffice()
+print(place.iskitchen()) # Or print(place.isOffice()
 ```
 
 ##### Description
 
 Permet de dire si oui ou non il s'agit d'un cuisine (ou d'un burreau). A chaque fois la fonctionn en question retourne un dictionnaire, avec ce qui en fait une cuisine (ou un burreau) ou non. Dans l'exemple d'utilisation ci-dessus, le dictionnaire retourné sera celui ci :
 ```python
-'Gaz': True, 'Piece': True, 'Accessible': True, 'Chauffage': True}
+{'Gaz': True, 'Piece': True, 'Accessible': True, 'Chauffage': True}
 ```
