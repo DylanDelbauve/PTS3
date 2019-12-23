@@ -86,15 +86,39 @@ def iskitchen():
 def isOffice():
     """
        determines if the place is an office according to established rules and based on the facts
-       
+
        Returns two-dimensional table: 
+
             Saying what makes it an office or not. For example: [piece][true]
     """
+    prolog.asserta("electricite() :- desservi(X), X == electricite") # vrai si deservi par l'électricité
+    prolog.asserta("planTravail() :- meuble(X), X == bureau")
+    
+    queryElectricite = list(prolog.query("electricite()"))
+    queryMeuble = list(prolog.query("planTravail()"))
+    queryAccessible = list(prolog.query("accessible()"))
+    queryChauffe = list(prolog.query("chauffe()"))
 
-def isWC():
-    """
-       determines if the place is a WC according to established rules and based on the facts
-       
-       Returns two-dimensional table: 
-            Saying what makes it an WC or not. For example: [piece][true]
-    """
+    liste = {
+        "Electricite": False,
+        "Bureau": False,
+        "Piece": False,
+        "Accessible": False,
+        "Chauffage": False
+    }
+    
+    if Room():
+        liste['Piece'] = True
+        liste["Accessible"] = True
+        liste['Chauffage'] = True
+    else:
+        if len(queryAccessible):
+            liste['Accessible'] = True
+        if len(queryChauffe):
+            liste['Chauffage'] = True
+    if len(queryElectricite):
+        liste['Electricite'] = True
+    if len(queryMeuble):
+        liste['Bureau'] = True
+
+    return liste
