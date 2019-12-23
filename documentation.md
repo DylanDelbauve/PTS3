@@ -21,7 +21,7 @@ Pour être une pièce le lieu doit :
 
 ### fonctions
 
-#### Space
+#### Space()
 
 ```python
 Space()
@@ -36,7 +36,7 @@ print(Space())
 
 Détermine si un lieu est un espace ou non en fonction des différentes règles établies.Il retourne ensuite une chaîne de caractères en fonction du contexte disant si ou oui ou non il s'agit d'un espace.
 
-#### Room
+#### Room()
 
 ```python
 Room()
@@ -47,6 +47,66 @@ Room()
 print(Room())
 
 ```
-#### Description
+##### Description
 
 Détermine si un lieu est une pièce ou non en fonction des différentes règles établies. Il retourne ensuite une chaîne de caractères en fonction du contexte disant si ou oui ou non il s'agit d'une pièce.
+
+#### writeFacts()
+
+```python
+writeFacts(tab)
+```
+
+##### Utilisation
+
+```python
+tab = (
+    "mur(4)",
+    "ouverture(porte)",
+    "desservi(electricite)",
+    "desservi(chauffage)",
+    "desservi(gaz)",
+    "superficie(9)"
+)
+
+writeFacts(tab)
+```
+##### Description
+
+Permets d'écrire les assertions correspondant à un lieu dans un fichier python (facts py) prévu pour.
+
+#### isKitchen(), isOffice()
+
+```python
+import placeTest
+place = placeTest
+
+print(place.iskitchen()) # OR print(place.isOffice()
+```
+
+##### Utilisation
+
+```python
+import placeTest
+place = placeTest
+
+tab = (
+    "mur(4)",
+    "ouverture(porte)",
+    "desservi(electricite)",
+    "desservi(chauffage)",
+    "desservi(gaz)",
+    "superficie(9)"
+) # Or facts for an Office
+
+place.writeFacts(tab)
+
+print(place.iskitchen()) # Or print(place.isOffice()
+```
+
+##### Description
+
+Permet de dire si oui ou non il s'agit d'un cuisine (ou d'un burreau). A chaque fois la fonctionn en question retourne un dictionnaire, avec ce qui en fait une cuisine (ou un burreau) ou non. Dans l'exemple d'utilisation ci-dessus, le dictionnaire retourné sera celui ci :
+```python
+{'Gaz': True, 'Piece': True, 'Accessible': True, 'Chauffage': True}
+```

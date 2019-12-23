@@ -19,13 +19,13 @@ Il s'agit foncièrement d'une IA capable à partir d'un fichier IFC d'en interpr
 Dans un fichier ou dans l'interpréteur python directement insérer comme suit 
 
 ```python
-import spaceOrRoom
+import placeTest
 print(Space()) 
 ```
 
 Qui devrait donner en l'occurrence : 
 ```
-Le lieu est un espace
+True
 ```
 
 Pour aller plus loin, se référer à la documentation technique.
@@ -46,6 +46,4 @@ Il s'agit d'un ensemble de faits sur des pièces et espaces avec leurs attributs
 La partie raisonnement fonctionne pour l'instant de la manière suivante :
 
 - un fichier python (**facts py**) contient un ensemble de fait sur une pièce ;
-- le fichier **SpaceOrRoom.py** lui contient un ensemble de règles Prolog ; 
-- enfin les fonctions appelées, appliquent les règles aux faits et retournent à l'utilisateur le résultat.
-
+- le fichier **placeTest.py** qui lui contient un ensemble de règles Prolog ainsi que des fonctions de test logique etc.; 
