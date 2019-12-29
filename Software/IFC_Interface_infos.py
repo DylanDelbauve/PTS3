@@ -32,7 +32,6 @@ class IFC_Interface_infos(Frame):
         prologResults = self._processor.getSpaceProperty()
 
         if (isinstance(prologResults, dict)):
-            print (prologResults)
             self.lb_problems = Listbox(self, background="darkred", fg="white", width=50, height=20)
             self.lb_problems.pack(side="left")
 

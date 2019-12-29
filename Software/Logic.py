@@ -115,10 +115,6 @@ class Logic(File_Reader):
             else:
                 prolog.asserta("{}(\'{}\')".format(s[0].lower(), s[1].lower()))
 
-        """test = list(prolog.query("zone(_)"))
-        for x in test:
-            print('true;')"""
-
 
     def getSpaceProperty(self):
         """ Pour un espace uniquement, renverra un tableau à deux dimensions pour vérifier si cet espace est bien une cuisine par exemple, le tableau aura comme colonne 0 les points qui sont bons, et colonne 1 les points mauvais """
@@ -154,10 +150,9 @@ class Logic(File_Reader):
                 "superficie(9)"               
             )
             pp.writeFacts(prologFacts)
-            print("Le type correct c'est : "+correctType)
             if (correctType != "Cuisine" and correctType != "Bureau"):
                 correctType = "Cuisine"
-                print("Le type bullshit c'est : "+correctType)
+
             return pp.Process(correctType.capitalize())
 
 
